@@ -28,7 +28,6 @@ public class ArbolUtil {
 }
 
 class Main{
-    private static ArbolBinario<Integer> arbol;
 
     public static void main(String[] args) {
         try {
@@ -39,7 +38,7 @@ class Main{
             NodoBinario<Integer> raiz = new NodoBinario<>(9, nodo2, nodo4);
             ArbolBinario<Integer> arbolBinario = new ArbolBinario<>(raiz);
 
-            boolean resultado = ArbolUtil.mismosNegativos(arbol);
+            boolean resultado = ArbolUtil.mismosNegativos(arbolBinario);
             System.out.println("Resultado: " + resultado);
 
             NodoBinario<Integer> nodoMenos2 = new NodoBinario<>(-2);
